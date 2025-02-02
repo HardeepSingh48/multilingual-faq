@@ -18,7 +18,8 @@ class FAQ(models.Model):
         # Generate cache key based on FAQ ID and language
         cache_key = f"faq_{self.id}_lang_{lang}"
 
-        # Check if translation is already cached
+        # Check if translation is cached already
+
         cached_translation = cache.get(cache_key)
         if cached_translation:
             return cached_translation
