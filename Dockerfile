@@ -11,6 +11,9 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
+# Run migrations before starting the server
+RUN python manage.py migrate
+
 # Expose port 8000 for Django
 EXPOSE 8000
 
