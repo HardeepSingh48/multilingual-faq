@@ -11,4 +11,12 @@ class FAQListView(APIView):
         # Convert each FAQ into translated format
         translated_faqs = [faq.get_translated(lang) for faq in faqs]
 
-        return Response(translated_faqs)
+        # Structured response for better readability
+        response_data = {
+            "status": "success",
+            "language": lang,
+            "total_faqs": len(translated_faqs),
+            "faqs": translated_faqs
+        }
+
+        return Response(response_data)
