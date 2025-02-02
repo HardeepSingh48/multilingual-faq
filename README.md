@@ -44,13 +44,13 @@ python manage.py runserver
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|---------|-------------|
-| `GET`  | `/api/faqs/` | Retrieve all FAQs |
-| `POST` | `/api/faqs/` | Create a new FAQ |
-| `GET`  | `/api/faqs/?lang=fr` | Get FAQs in French |
-| `PUT`  | `/api/faqs/{id}/` | Update an FAQ |
-| `DELETE` | `/api/faqs/{id}/` | Delete an FAQ |
+| Method   | Endpoint             | Description |
+|----------|----------------------|-------------|
+| `GET`    | `/api/faqs/`         | Retrieve all FAQs |
+| `POST`   | `/api/faqs/`         | Create a new FAQ |
+| `GET`    | `/api/faqs/?lang=fr` | Get FAQs in French |
+| `PUT`    | `/api/faqs/{id}/`    | Update an FAQ |
+| `DELETE` | `/api/faqs/{id}/`    | Delete an FAQ |
 
 ## Contribution Guidelines
 - Fork the repository.
