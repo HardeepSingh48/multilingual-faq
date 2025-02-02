@@ -145,9 +145,10 @@ CKEDITOR_CONFIGS = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        'LOCATION': 'redis://127.0.0.1:6379/1',  # Redis URL
+        "LOCATION": "redis://127.0.0.1:6379/1",  # Use 'redis' as the hostname (the service name in docker-compose.yml)
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
+        },
     }
 }
+
